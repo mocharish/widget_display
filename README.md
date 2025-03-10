@@ -18,11 +18,19 @@ This project is a simple recommendation widget that fetches video and article re
 - Jest for unit testing
 - Taboola API for recommendations
 
+## Clone the Repository
+
+To clone this project and run it locally, use the following commands:
+```bash
+git clone https://github.com/mocharish/widget_display.git
+cd widget_display
+```
+
 ## Run the Project
 
 To run the widget in your local environment:
 
-Make sure you have extracted the zip file first and than open index.html in your browser. You can double-click on the file or open it via your code editor.
+Open index.html in your browser, you can double-click on the file or open it via your code editor.
 The widget will fetch recommendations from the Taboola API and display them within the #recommendation-widget div.
 Note that sometimes the API returnes an empty recommendation list so if you see "No recommendations available" keep refreshing until widgets are shown.
 
