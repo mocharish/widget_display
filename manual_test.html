@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Test</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h2>Widget Test</h2>
+    <button onclick="testFetchRecommendations()">Test Fetch Recommendations</button>
+    <button onclick="testRenderRecommendations()">Test Render Recommendations</button>
+    
+    <div id="recommendation-widget"></div>
+    <div id="test-output"></div>
+
+    <script>
+        function testFetchRecommendations() {
+            document.getElementById('test-output').innerHTML = 'Fetching recommendations...';
+            fetchRecommendations();
+        }
+
+        function testRenderRecommendations() {
+            document.getElementById('test-output').innerHTML = 'Rendering recommendations...';
+
+            const sampleData = [
+                { 
+                    name: "Sample Video", 
+                    branding: "Brand A",
+                    origin: "organic",
+                    url: "http://example.com",
+                    thumbnail: [{ url: "https://via.placeholder.com/150" }]
+                }
+            ];
+            renderRecommendations(sampleData);
+        }
+    </script>
+</body>
+</html>
+ 
